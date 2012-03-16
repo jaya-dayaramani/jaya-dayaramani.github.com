@@ -1,8 +1,153 @@
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Blog</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--<script type="text/javascript" src="unitpngfix.js"></script>-->
+</head>
+<body>
 
-<h1>
-Hi
+<div id="main_container">
+	<div class="top_leafs"><img src="images/top_leafs.png" alt="" title=" "/></div>
+	<div id="header">
+    	<div class="logo">
+       <a href="index.html">Jaya Dayaramani</a>
+        </div>
 
-<button type="button">About Me!</button>
-</h1>
+        <div class="menu">
+        	<ul>                            
+        		<li><a href="index.html">home</a></li>
+                <li class="selected"><a href="AboutMe.htm">About me</a></li>
+               <li><a href="#">Contact me</a></li>
+        	</ul>
+        </div>
+        
+    </div>
+    
+    
+    <div id="center_content">
+    		<div class="left_content">
+            
+                    <h1>Few words about me...</h1>
+                    <p>
+                    <img src="images/icon1.gif" alt="" title="" class="left_icon" />
+                    A Virgo by the zodiac sign and fairly shy by nature, I love to stay calm and keep doing my bit. I am a good listener, prefer to listen more than what I say. Perhaps, that's a common trait in readers. Well, readers! Am I the one? Not really an avid reader,but sounds reading as fun! Readers are the different creatures. They live beyond boundaries and think beyond imaginations. They can go above the seven fold skies and even below the depth of the planet. As for me, I read, think and ideate.And when it comes to writing, my words are simple that can be understood by anyone who knows how to read. 
+
+                    </p>
+                    
+                    <h4>
+                    My Profession – What I Do... </h4>
+                    <p>
+                    I had 2 years of IT experience and I am a .Net developer.Prior to .Net had worked on Lotus Notes.
+                    </p>
+         <!-- <h1>Reading</h1>-->
+                    <!--<div class="photos_block">
+                    
+                    	<div class="photo_box">
+                        	<a href="#"><img src="images/starsShineDown.jpg" alt="" title="" class="photo" border="0" /></a><br />
+                            <a href="#" class="view">view</a>
+                        </div>
+                    	<div class="photo_box">
+                        	<a href="#"><img src="images/IfTommorrowNeverComes.jpg" alt="" title="" class="photo" border="0" /></a><br />
+                            <a href="#" class="view">view</a>
+                        </div>                    
+                    	<div class="photo_box">
+                        	<a href="#"><img src="images/BestLaidPlans.jpg" alt="" title="" class="photo" border="0" /></a><br />
+                            <a href="#" class="view">view</a>
+                        </div>                    
+                    </div>-->
+            
+            
+            </div>
+            
+            
+            <div class="right_content">
+            
+                    <!-- <h1>About Me</h1>-->
+                    
+                    <!--<div class="tip_box"> 
+                   
+                    <p class="tips">
+                    Hi! I am Jaya.Working as a .Net Developer. I love to read books by Sidney Sheldon,likes drawing and painting.
+                    </p>
+                    <a href="#" class="read_more">View My Profile</a>
+                    
+                    </div>-->
+ 
+                     
+                     <h1>Blog Space</h1>
+                    
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">21</span><br />
+                            <span class="month">febr</span>
+                        </div>
+                        <div class="news_content">
+                      <h2> <a href="CommandLine.htm" class="read_more">Basic Linux Commands </a></h2>
+                         </div>
+                    
+                    </div>       
+                    
+                         
+                         
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">23</span><br />
+                            <span class="month">febr</span>
+                        </div>
+                        <div class="news_content">
+                      <h2> <a href="SharingAndUpdating.htm" class="read_more">Sharing and Updating Projects </a></h2>
+                         </div>
+                    
+                    </div>     
+                    <!--<div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">29</span><br />
+                            <span class="month">febr</span>
+                        </div>
+                        <div class="news_content">
+                      <h2> <a href="#" class="read_more">Basic about HTML </a></h2>
+                         </div>
+                    
+                    </div>-->
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">07</span><br />
+                            <span class="month">mar</span>
+                        </div>
+                        <div class="news_content">
+                       <h2> <a href="JavascriptArrays.htm" class="read_more">JavaScript Arrays</a></h2>
+                       </div>
+                    
+                    </div>
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">26</span><br />
+                            <span class="month">mar</span>
+                        </div>
+                        <div class="news_content">
+                       <h2> <a href="jQuery_Ajax.htm" class="read_more">Using Ajax controls and jQuery</a></h2>
+                       </div>
+                    
+                    </div>       
+                
+                     </div>
+            
+                        <div class="bottom_content">
+            	    <div class="footer">
+                
+                  </div>
+                        
+           </div>
+           
+    </div>
+    
+    
+
+    
+</div>
+<!-- end of main_container -->
+
+</body>
 </html>
