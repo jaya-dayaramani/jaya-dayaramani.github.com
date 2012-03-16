@@ -1,0 +1,60 @@
+<html>
+<body>
+<h1>
+Basic Linux Commands
+</h1>
+<p>
+Here I would give you a quick overview and basic introduction to some of the linux commands.This may not be complete set of commands,I found that it can be helpful to new learners like me since I started with linux yesterday. 
+</p>
+<p>
+Executing Commands:
+The Command PATH:
+
+Most common commands are located in your shell's “PATH”, meaning that you can just
+type the name of the program to execute it.
+Example: Typing “ ls” will execute the “ ls” command.
+
+Your shell's “PATH” variable includes the most common program locations, such as
+/bin, /usr/bin, /usr/X11R6/bin, and others.
+
+To execute commands that are not in your current PATH, you have to give the complete
+location of the command.
+Examples: /home/bob/myprogram
+./program  (Execute a program in the current directory)
+~/bin/program  (Execute program from a personal bin directory)
+</p>
+<h3>
+Following are some of the Commands for Navigating the Linux Filesystems though they are very basic,will have the glimpse through. It describes the operation of  the pwd, cd, and ls commands 
+</h3>
+
+
+<h3>Linux Commands</h3>
+<p>
+pwd                “Print Working Directory”. Shows the current location in the directory tree.
+cd                   “Change Directory”. When typed , it returns  to your home directory.
+cd directory     Change into the specified directory name.Example:  cd /usr/src/linux
+cd ~               “~” is an alias for your home directory. It can be used as a shortcut to your “home”, or     other directories relative to your home.
+cd ..                 Move up one directory. For example, if you are in /home/vic and you type “cd ..”, you   will end up in /home.
+cd                   Return to previous directory. An easy way to get back to your previous location!
+ls                    List the files in the specified directory.Example: ls /var/log
+ls -l                 List files in “long” format, one file per line. This also shows you additional info about the file, such as ownership, permissions, date, and size.
+ls -t                Lists the most recent files first(t represents time).
+ls -s                Lists the biggest files first(s represents size).
+ls -r                Lists the most recent files first.(r represents reverse order)
+</p>
+<h3>
+Informational Commands
+</h3>
+<p>
+ps                         Lists currently running process (programs).
+w                          Show who is logged on and what they are doing.
+id                          Print your user-id and group id's
+df                          Report filesystem disk space usage (“Disk Free” is how I remember it)
+du                         Disk Usage in a particular directory. “du -s” provides a summary for the current directory.
+top                        Displays CPU processes in a full-screen GUI. A great way to see the activity on your  computer in real-time.  Type “Q” to quit.
+locate                   A quick way to search for files anywhere on the filesystem. For example, you can find all files and directories that contain the name “mozilla” by typing: locate mozilla.
+free                        Displays amount of free and used memory in the system.
+cat /proc/cpuinfo     Displays information about your CPU.
+cat /proc/meminfo   Display lots of information about current memory usage.
+</p>
+</body> </html>
