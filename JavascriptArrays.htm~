@@ -17,7 +17,7 @@
              <div class="menu">
         	<ul>                            
         		<li><a href="index.html">home</a></li>
-                <li><a href="AboutMe.htm">About me</a></li>
+                <li><a href="AboutMe.html">About me</a></li>
                <li><a href="#">Contact me</a></li>
         	</ul>
         </div>
@@ -184,7 +184,8 @@ document.write('2&gt;'+myArray[2]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nb
 <br />
 <br />
 <br />
-<br />
+<br /><iframe src="http://www.facebook.com/plugins/like.php?href=http://jaya-dayaramani.github.com/JavascriptArrays.htm" scrolling="no" frameborder="0"style="border:none; width:200px; height:80px"></iframe>
+
 </div>
 
     
