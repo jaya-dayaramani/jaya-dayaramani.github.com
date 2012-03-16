@@ -16,7 +16,7 @@
         </div>
              <div class="menu">
         	<ul>                            
-        		<li><a href="index.html">home</a></li>
+        		<li class="selected"><a href="index.html">home</a></li>
                 <li><a href="AboutMe.htm">About me</a></li>
                <li><a href="#">Contact me</a></li>
         	</ul>
@@ -60,7 +60,7 @@ Or use the partial class instead.<br />
 For info on updatepanel in Ajax I had refered this link:<br />
 &nbsp;<a href="http://updatepanelplugin.codeplex.com/">http://updatepanelplugin.codeplex.com</a><br />
 <div>
-<br /></div>
+<br /><iframe src="http://www.facebook.com/plugins/like.php?href=http://jaya-dayaramani.github.com/jQuery_Ajax.htm" scrolling="no" frameborder="0"style="border:none; width:200px; height:80px"></iframe></div>
 </div>
 
     
@@ -87,7 +87,7 @@ For info on updatepanel in Ajax I had refered this link:<br />
                             <span class="month">febr</span>
                         </div>
                         <div class="news_content">
-                      <h2> <a href="CommandLine.htm" class="read_more">Basic Linux Commands </a></h2>
+                      <h2> <a href="CommandLine.html" class="read_more">Basic Linux Commands </a></h2>
                          </div>
                     
                     </div>       
