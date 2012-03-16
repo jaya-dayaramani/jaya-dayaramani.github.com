@@ -2,7 +2,7 @@
 
 <h1>
 Hi
-<a href="AboutMe.html">Visit abt me</a>
+
 <button type="button">About Me!</button>
 </h1>
 </html>
