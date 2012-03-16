@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Javascript Arrays</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--<script type="text/javascript" src="unitpngfix.js"></script>-->
+</head>
+<body>
+
+<div id="main_container">
+	<div class="top_leafs"><img src="images/top_leafs.png" alt="" title=" "/></div>
+	<div id="header">
+    	<div class="logo">
+       <a href="index.html">Jaya Dayaramani</a>
+        </div>
+             <div class="menu">
+        	<ul>                            
+        		<li class="selected"><a href="index.html">home</a></li>
+                <li><a href="AboutMe.htm">About me</a></li>
+               <li><a href="#">Contact me</a></li>
+        	</ul>
+        </div>
+    </div>
+        
+    <div id="center_content">
+    		<div class="left_content">
+            
+                    <h1>Javascript Arrays</h1>
+                    <div dir="ltr" style="text-align: left;" trbidi="on">
+<br />
+<b><i><u><span style="color: #674ea7;">Javascript Arrays</span></u></i></b><br />
+<br />
+An Array is an enumerated list of variables.<br />
+The index can be referenced by a variable, allowing for easy looping through the data structure.<br />
+<br />
+for(i=0; i&lt;6; i++) {<br />
+&nbsp; &nbsp;document.write(x[i]+'&lt;br&gt;);<br />
+}<br />
+<br />
+Which will output the following…<br />
+<br />
+0<br />
+1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+<br />
+<b><i><u><span style="color: #674ea7;">Creating A New Array</span></u></i></b><br />
+var myArray = [];<br />
+<br />
+<b><i><u><span style="color: #674ea7;">Initializing An Array</span></u></i></b><br />
+with pre-defined data…<br />
+<br />
+var myArray = ['January', 'February', 'March'];<br />
+document.write('0&gt;'+myArray[0]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 0&gt;January<br />
+document.write('1&gt;'+myArray[1]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 1&gt;February<br />
+document.write('2&gt;'+myArray[2]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 2&gt;March<br />
+<br />
+<b><i><u><span style="color: #674ea7;">Storing Data In An Array</span></u></i></b><br />
+An array can store anything you can assign to a variable: booleans, numbers, strings,<br />
+functions, objects, other Arrays, even regular expressions…<br />
+<br />
+var myArray = [ 3, 'hello!', function() {return 5}, {'color':'blue', 'budget':25}, /[ell]/i ];<br />
+document.write('0&gt;'+myArray[0]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 0&gt;3<br />
+document.write('1&gt;'+myArray[1]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 1&gt;hello!<br />
+document.write('2&gt;'+myArray[2]()+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 2&gt;5<br />
+document.write('3&gt;'+myArray[3].color+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 3&gt;blue<br />
+document.write('3&gt;'+myArray[3].budget+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Will output: 3&gt;25<br />
+document.write('4&gt;'+myArray[4].test(myArray[1])+'&lt;BR&gt;'); // Will output: 4&gt;true<br />
+<br />
+&nbsp;<b><i><u><span style="color: #674ea7;">Arrays Passed By Reference</span></u></i></b><br />
+Arrays are passed to functions by reference, or as a pointer to the original.<br />
+This means anything you do to the Array inside the function affects the original.<br />
+<br />
+var myArray = [ 'zero', 'one', 'two', 'three', 'four', 'five' ];<br />
+<br />
+document.write(myArray[1]); // Will output: one<br />
+<br />
+function passedByReference(refArray)<br />
+&nbsp;{<br />
+&nbsp; &nbsp;refArray[1] = 'changed';<br />
+}<br />
+<br />
+passedByReference(myArray);<br />
+<br />
+document.write(myArray[1]); // Will output: changed<br />
+<br />
+<br />
+<b><i><u><span style="color: #674ea7;">Arrays &nbsp;Assigned By Reference</span></u></i></b><br />
+Assigning an Array to a new variable creates a pointer to the original Array<br />
+<br />
+var myArray = [ 'zero', 'one', 'two', 'three', 'four', 'five' ];<br />
+var newArray= myArray;<br />
+<br />
+newArray[1] = 'changed';<br />
+<br />
+document.write(myArray[1]); // Will output: changed<br />
+<br />
+<br />
+<b><i><u><span style="color: #674ea7;">Passing Arrays As Values</span></u></i></b><br />
+To pass an Array by value instead of by reference, use the Array.slice() method.<br />
+<br />
+var myArray = [ 'zero', 'one', 'two', 'three', 'four', 'five' ];<br />
+var newArray= myArray.slice();<br />
+<br />
+newArray[1] = 'changed';<br />
+<br />
+document.write(myArray[1]); // Will output: one<br />
+<br />
+function passedByReference(refArray) {<br />
+&nbsp; &nbsp;refArray[1] = 'changed';<br />
+}<br />
+<br />
+passedByReference(myArray.slice());<br />
+document.write(myArray[1]); // Will output: one<br />
+<br />
+<span style="color: #674ea7;"><b><i><u>Array Methods&nbsp;</u></i></b></span><br />
+Some of the array methods<br />
+concat()<br />
+join()<br />
+pop()<br />
+push()<br />
+<br />
+Reference for detailed array methods explained:<br />
+<a href="http://www.w3schools.com/jsref/jsref_obj_array.asp">http://www.w3schools.com</a><br />
+<a href="http://www.tizag.com/javascriptT/javascriptarray.php">http://www.tizag.com/javascriptT/javascriptarray.php</a><br />
+<a href="http://www.javascriptkit.com/jsref/arrays.shtml">http://www.javascriptkit.com/jsref/arrays.shtml</a><br />
+<br />
+<b><i><u><span style="color: #674ea7;">Howto Easily Add Items To An Array</span></u></i></b><br />
+<br />
+There are three ways to easily add items to an array. First you can use the Array.length property.<br />
+Since Arrays start with index 0, then Array.length is always equal to the first empty index at the end of the Array.<br />
+<br />
+var myArray = [];<br />
+myArray[0] = 'January';<br />
+myArray[1] = 'February';<br />
+<br />
+document.write(myArray.length); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 2<br />
+<br />
+myArray[myArray.length] = 'March'; &nbsp; &nbsp; &nbsp; &nbsp; // Adds Item to end of Array<br />
+<br />
+document.write(myArray.length); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 3<br />
+<br />
+document.write('0&gt;'+myArray[0]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 0&gt;January<br />
+document.write('1&gt;'+myArray[1]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 1&gt;February<br />
+document.write('2&gt;'+myArray[2]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 2&gt;March<br />
+<br />
+You can add the .push() method of the Array. This will add the requested items to the end of the Array.<br />
+<br />
+var myArray = [];<br />
+myArray[0] = 'January';<br />
+myArray[1] = 'February';<br />
+<br />
+myArray.push('March'); &nbsp; &nbsp; &nbsp; &nbsp; // Adds Item to end of Array<br />
+<br />
+document.write('0&gt;'+myArray[0]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 0&gt;January<br />
+document.write('1&gt;'+myArray[1]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 1&gt;February<br />
+document.write('2&gt;'+myArray[2]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 2&gt;March<br />
+<br />
+You can use the .unshift() method to insert an item at the BEGINNING of the array<br />
+<br />
+<br />
+var myArray = [];<br />
+myArray[0] = 'February';<br />
+myArray[1] = 'March';<br />
+<br />
+myArray.unshift('January'); &nbsp; &nbsp; &nbsp; &nbsp; // Adds Item to beginning of Array<br />
+<br />
+document.write('0&gt;'+myArray[0]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 0&gt;January<br />
+document.write('1&gt;'+myArray[1]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 1&gt;February<br />
+document.write('2&gt;'+myArray[2]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Will output: 2&gt;March<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</div>
+
+    
+            </div>
+                        
+            <div class="right_content">
+            
+                     <h1>About Me</h1>
+                    
+                    <div class="tip_box"> 
+                   
+                    <p class="tips">
+                    Hi! I am Jaya.Working as a .Net Developer. I love to read books by Sidney Sheldon,likes drawing and painting.
+                    </p>
+                    <a href="#" class="read_more">View My Profile</a>
+                    
+                    </div>
+                     
+                     <h1>Blog Space</h1>
+                    
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">21</span><br />
+                            <span class="month">febr</span>
+                        </div>
+                        <div class="news_content">
+                      <h2> <a href="CommandLine.html" class="read_more">Basic Linux Commands </a></h2>
+                         </div>
+                    
+                    </div>       
+                 
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">23</span><br />
+                            <span class="month">febr</span>
+                        </div>
+                        <div class="news_content">
+                      <h2> <a href="SharingAndUpdating.htm" class="read_more">Sharing and Updating Projects </a></h2>
+                         </div>
+                    
+                    </div>     
+                    <!--<div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">29</span><br />
+                            <span class="month">febr</span>
+                        </div>
+                        <div class="news_content">
+                      <h2> <a href="#" class="read_more">Basic about HTML </a></h2>
+                         </div>
+                    
+                    </div>-->
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">07</span><br />
+                            <span class="month">mar</span>
+                        </div>
+                        <div class="news_content">
+                       <h2> <a href="JavascriptArrays.htm" class="read_more">JavaScript Arrays</a></h2>
+                       </div>
+                    
+                    </div>
+                    <div class="news_box"> 
+                    	<div class="date_box">
+                        	<span class="day">26</span><br />
+                            <span class="month">mar</span>
+                        </div>
+                        <div class="news_content">
+                       <h2> <a href="jQuery_Ajax.htm" class="read_more">Using Ajax controls and jQuery</a></h2>
+                       </div>
+                    
+                    </div>       
+                
+                     </div>
+            
+                        <div class="bottom_content">
+            	    <div class="footer">
+                
+                  </div>
+                        
+           </div>
+           
+    </div>
+    
+</div>
+<!-- end of main_container -->
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-<title>Blog</title>
+<title>Using Ajax control and JQuery in .Net</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <!--<script type="text/javascript" src="unitpngfix.js"></script>-->
 </head>
@@ -14,67 +14,70 @@
     	<div class="logo">
        <a href="index.html">Jaya Dayaramani</a>
         </div>
-
-        <div class="menu">
+             <div class="menu">
         	<ul>                            
-        		<li><a href="index.html">home</a></li>
-                <li class="selected"><a href="AboutMe.htm">About me</a></li>
+        		<li class="selected"><a href="index.html">home</a></li>
+                <li><a href="AboutMe.htm">About me</a></li>
                <li><a href="#">Contact me</a></li>
         	</ul>
         </div>
-        
     </div>
-    
-    
+        
     <div id="center_content">
     		<div class="left_content">
             
-                    <h1>Few words about me...</h1>
-                    <p>
-                    <img src="images/icon1.gif" alt="" title="" class="left_icon" />
-                    A Virgo by the zodiac sign and fairly shy by nature, I love to stay calm and keep doing my bit. I am a good listener, prefer to listen more than what I say. Perhaps, that's a common trait in readers. Well, readers! Am I the one? Not really an avid reader,but sounds reading as fun! Readers are the different creatures. They live beyond boundaries and think beyond imaginations. They can go above the seven fold skies and even below the depth of the planet. As for me, I read, think and ideate.And when it comes to writing, my words are simple that can be understood by anyone who knows how to read. 
+                    <h1>Using Ajax control and JQuery in .Net</h1>
+                    <div dir="ltr" style="text-align: left;" trbidi="on">
+<br />
+I have the ASP.Net page,in that i have one button and on click of that button calling an alert msg.In have achieved this using jQuery.<br />
+However,there is much simpler way,like on click event of that button i would have called a function/a alert box as in my case.<br />
+<br />
+Now I am using Microsoft Ajax framework,utilizing the UpdatePanel control.<br />
+The reason why I do that is that certain elements are created on the page based on some server-side logic.Also it could be written by&nbsp;using jQuery but i have tried it that with updatePanel.<br />
+Also I had another button inside the very same updatePanel and onclick of that Autopost is happening and the dropdownlist gets filled.<br />
+<br />
+Now the problem which I was facing once I have a postback on the updatePanel the jQuery events stops working.<br />
+I actually was expecting this, since the "postback" is not really a new postback so my code in document.ready that binds the&nbsp;events won't be fired again.<br />
+So was left with the problem of rebinding my controls after the UpdatePanel is done updating the DOM.<br />
+<br />
+So i tried for partial load function and it worked....<br />
+<br />
+<br />
+function pageLoad(sender, args)<br />
+{<br />
+&nbsp; &nbsp;if (args.get_isPartialLoad())<br />
+&nbsp; &nbsp;{<br />
+&nbsp; &nbsp; &nbsp; &nbsp;//Specific code for partial postbacks can go in here.<br />
+&nbsp; &nbsp;}<br />
+}<br />
+<br />
+For writing partial class i hav taken help from this link:<br />
+<a href="http://www.itfunda.com/Howto">http://www.itfunda.com/Howto</a><br />
+<br />
+Another solution to the above problem was simply kept the other button and the dropdown list outside the update template that was using<br />
+jQuery,as whenevr post back is happened the attachment to that content is lost.so have to reattach and specify the DOM attachment.<br />
+Or use the partial class instead.<br />
+For info on updatepanel in Ajax I had refered this link:<br />
+&nbsp;<a href="http://updatepanelplugin.codeplex.com/">http://updatepanelplugin.codeplex.com</a><br />
+<div>
+<br /></div>
+</div>
 
-                    </p>
-                    
-                    <h4>
-                    My Profession – What I Do... </h4>
-                    <p>
-                    I had 2 years of IT experience and I am a .Net developer.Prior to .Net had worked on Lotus Notes.
-                    </p>
-         <!-- <h1>Reading</h1>-->
-                    <!--<div class="photos_block">
-                    
-                    	<div class="photo_box">
-                        	<a href="#"><img src="images/starsShineDown.jpg" alt="" title="" class="photo" border="0" /></a><br />
-                            <a href="#" class="view">view</a>
-                        </div>
-                    	<div class="photo_box">
-                        	<a href="#"><img src="images/IfTommorrowNeverComes.jpg" alt="" title="" class="photo" border="0" /></a><br />
-                            <a href="#" class="view">view</a>
-                        </div>                    
-                    	<div class="photo_box">
-                        	<a href="#"><img src="images/BestLaidPlans.jpg" alt="" title="" class="photo" border="0" /></a><br />
-                            <a href="#" class="view">view</a>
-                        </div>                    
-                    </div>-->
-            
-            
+    
             </div>
-            
-            
+                        
             <div class="right_content">
             
-                    <!-- <h1>About Me</h1>-->
+                     <h1>About Me</h1>
                     
-                    <!--<div class="tip_box"> 
+                    <div class="tip_box"> 
                    
                     <p class="tips">
                     Hi! I am Jaya.Working as a .Net Developer. I love to read books by Sidney Sheldon,likes drawing and painting.
                     </p>
                     <a href="#" class="read_more">View My Profile</a>
                     
-                    </div>-->
- 
+                    </div>
                      
                      <h1>Blog Space</h1>
                     
@@ -88,9 +91,7 @@
                          </div>
                     
                     </div>       
-                    
-                         
-                         
+                 
                     <div class="news_box"> 
                     	<div class="date_box">
                         	<span class="day">23</span><br />
@@ -142,9 +143,6 @@
            </div>
            
     </div>
-    
-    
-
     
 </div>
 <!-- end of main_container -->
