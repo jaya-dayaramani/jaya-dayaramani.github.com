@@ -18,7 +18,7 @@
         <div class="menu">
         	<ul>                            
         		<li class="selected"><a href="index.html">home</a></li>
-                <li><a href="AboutMe.htm">About me</a></li>
+                <li><a href="AboutMe.html">About me</a></li>
                <li><a href="#">Contact me</a></li>
         	</ul>
         </div>
@@ -38,16 +38,16 @@
                     <div class="photos_block">
                     
                     	<div class="photo_box">
-                        	<a href="#"><img src="images/starsShineDown.jpg" alt="" title="" class="photo" border="0" /></a><br />
-                            <a href="#" class="view">view</a>
+                        	<a href="http://shortstoree.blogspot.in/2009/08/sidney-sheldon-stars-shine-down.html"><img src="images/starsShineDown.jpg" alt="" title="" class="photo" border="0" /></a><br />
+                            <a href="http://shortstoree.blogspot.in/2009/08/sidney-sheldon-stars-shine-down.html" class="view">view</a>
                         </div>
                     	<div class="photo_box">
-                        	<a href="#"><img src="images/IfTommorrowNeverComes.jpg" alt="" title="" class="photo" border="0" /></a><br />
-                            <a href="#" class="view">view</a>
+                        	<a href="http://www.slideshare.net/mailtoamit89/sidney-sheldon-if-tomorrow-comes"><img src="images/IfTommorrowNeverComes.jpg" alt="" title="" class="photo" border="0" /></a><br />
+                            <a href="http://www.slideshare.net/mailtoamit89/sidney-sheldon-if-tomorrow-comes" class="view">view</a>
                         </div>                    
                     	<div class="photo_box">
-                        	<a href="#"><img src="images/BestLaidPlans.jpg" alt="" title="" class="photo" border="0" /></a><br />
-                            <a href="#" class="view">view</a>
+                        	<a href="http://e-buks.weebly.com/uploads/6/4/3/3/6433110/best-laid_plans.pdf"><img src="images/BestLaidPlans.jpg" alt="" title="" class="photo" border="0" /></a><br />
+                            <a href="http://e-buks.weebly.com/uploads/6/4/3/3/6433110/best-laid_plans.pdf" class="view">view</a>
                         </div>                    
                     </div>
             
