@@ -194,8 +194,7 @@ document.write('2&gt;'+myArray[2]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nb
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 
-    
-            </div>
+                </div>
                         
             <div class="right_content">
             
@@ -206,8 +205,7 @@ document.write('2&gt;'+myArray[2]+'&lt;BR&gt;'); &nbsp; &nbsp; &nbsp; &nbsp; &nb
                     <p class="tips">
                     Hi! I am Jaya.Working as a .Net Developer. I love to read books by Sidney Sheldon,likes drawing and painting.
                     </p>
-                    <a href="#" class="read_more">View My Profile</a>
-                    
+                                      
                     </div>
                      
                      <h1>Blog Space</h1>
